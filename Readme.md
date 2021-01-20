@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ксения Коновалова](https://up.htmlacademy.ru/htmlcss/30/user/1505047).
-* Наставник: [Александр Григорьев] (https://htmlacademy.ru/profile/fuckhtml).
+* Наставник: [Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
 
 ---
 
