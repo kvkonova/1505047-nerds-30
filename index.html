@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <a>
-          <img src="https://via.placeholder.com/150x100" alt="Логотип студии Нёрдс">
-        </a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        <a href="">Корзина</a>
-    
-      </nav>
-    </header>
+    <body>
+      <header class="main-header">
+        <nav>
+          <a>
+            <img src="https://via.placeholder.com/150x100" alt="Логотип студии Нёрдс">
+          </a>
+          <ul>
+            <li><a href="">Студия</a></li>
+            <li><a href="">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+          <a href="">Корзина</a>
+      
+        </nav>
+      </header>
     <main>
       <h1>Студия "Нёрдс"</h1>
       <section>
@@ -56,7 +56,9 @@
         </ul>
       </section>
       <section>
-        <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
+        <div> 
+        <h2 class="visually-hidden">О нас</h2>
+        <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара</h3>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <p>Выполняем заказы на разработку:</p>
         <ul>
@@ -64,22 +66,23 @@
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-      </section>
-      <section>
+      </div>
+      <div>      
         <img src="https://via.placeholder.com/150x100" alt="Логотип студии Нёрдс">
         <table>
         <caption>С 2004 года любим точность во всем:</caption>
         <tr>
-          <th>146%</th>
-          <th>100%</th>
-          <th>50%</th>
+          <td>146%</td>
+          <td>100%</td>
+          <td>50%</td>
         </tr>
         <tr>
-          <td>Уровень самоотдачи</td>
-          <td>Соблюдение сроков</td>
-          <td>Минимальная предоплата</td>
+          <th>Уровень самоотдачи</th>
+          <th>Соблюдение сроков</th>
+          <th>Минимальная предоплата</th>
         </tr>
         </table>
+      </div>
       </section>
       <section>
         <h2>Список Партнеров</h2>
@@ -100,16 +103,16 @@
       </section>
   
     </main>
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <div>
       <!-- Здесь будет карта -->
       <p>NЁRDS DESIGN STUDIO</p>
       <p>191186, Санкт-Петербург, <br>
       ул. Б. Конюшенная, д.19/8 <br>
       тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
       <a href="">Напишите нам</a>
-      </section>
-      <section>
+      </div>
+      <div>
         <ul>
           <li>
             <a href="#">Вконтакте</a>
@@ -121,11 +124,11 @@
             <a href="#">Инстаграм</a>
           </li>
         </ul>
-      </section>
-      <section>
+      </div>
+      <div>
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
+      </div>
     </footer>
     
   </body>
