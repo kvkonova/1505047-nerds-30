@@ -1,0 +1,164 @@
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-gray:#EEEEEE;
+  --basic-pink:#FB565A;
+  --basic-green:#00CA74;
+  --basic-yellow:#EFC849;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+ }
+a {
+  text-decoration: none;
+  }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+
+  }
+
+.basket {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500
+}
+.main-navigation a {
+  color: var(--basic-black);
+}
+
+.main-header {
+  background-image: url("img\background.png"); /*не подключается подложка, проверить*/
+  background-position: center, 0 0;
+  background-repeat: no-repeat
+}
+
+/* User navigation */
+
+.site-navigation {
+  list-style: none;
+}
+.basket ul {
+  list-style: none
+}
+
+/*benefits*/
+.benefits-list {
+  list-style: none
+}
+
+/*partners*/
+.partners-list {
+  list-style: none
+}
+
+/*footer-social*/
+.footer-social-list {
+  list-style: none
+}
+
+.slogan-subtitle {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500
+}
+
+.button {
+  background-color: var(--basic-pink);
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.button-1{
+
+}
+
+.button-2 {
+  background-color: var(--basic-green);
+}
+
+.button-3{
+  background-color: var(--basic-yellow);
+}
+
+.benefits-subtitle{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.about-slogan{
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.about-work {
+  font-weight: 700;
+}
+.features-list {
+  list-style: none;
+}
+.features-item::before{
+  content:  "—";
+  position: relative;
+  color: var(--basic-pink);
+  width: 25px;
+  height: 2px;
+}
+
+.table-title {
+  font-weight: 700;
+}
+
+.first-row-item{
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.second-row-item {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.contacts {
+
+}
+
+.footer-friends h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.footer-friends p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
