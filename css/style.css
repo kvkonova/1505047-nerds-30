@@ -21,6 +21,7 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
  }
+
 a {
   text-decoration: none;
   }
@@ -30,14 +31,14 @@ img {
   height: auto;
 }
 
-/* Main navigation */
 
+
+/* Навигация */
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-
-  }
+}
 
 .basket {
   font-size: 16px;
@@ -47,65 +48,42 @@ img {
 .main-navigation a {
   color: var(--basic-black);
 }
-
-.main-header {
-  background-image: url("img\background.png"); /*не подключается подложка, проверить*/
-  background-position: center, 0 0;
-  background-repeat: no-repeat
-}
-
-/* User navigation */
-
 .site-navigation {
   list-style: none;
 }
-.basket ul {
+.user-navigation{
   list-style: none
 }
 
-/*benefits*/
+site-navigation a:hover,
+site-navigation a:focus {
+  text-decoration: underline;
+}
+
+/*Header*/
+.main-header {
+  background-position: center, 0 0;
+  background-repeat: no-repeat;
+  background-color: var(--basic-gray);
+  }
+
+
+/*Основное*/
+
 .benefits-list {
   list-style: none
 }
 
-/*partners*/
 .partners-list {
   list-style: none
 }
 
-/*footer-social*/
-.footer-social-list {
-  list-style: none
-}
-
-.slogan-subtitle {
+.features-subtitle {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500
 }
 
-.button {
-  background-color: var(--basic-pink);
-  color: var(--basic-white);
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  border-radius: 3px;
-  text-align: center;
-}
-
-.button-1{
-
-}
-
-.button-2 {
-  background-color: var(--basic-green);
-}
-
-.button-3{
-  background-color: var(--basic-yellow);
-}
 
 .benefits-subtitle{
   font-size: 24px;
@@ -148,9 +126,16 @@ img {
   font-weight: 400;
 }
 
-.contacts {
+.partners-item img {
+  opacity: 0.2;
+  }
 
+/*Футер*/
+
+.footer-social-list {
+  list-style: none
 }
+
 
 .footer-friends h2 {
   font-size: 36px;
@@ -162,3 +147,156 @@ img {
   line-height: 22px;
   font-weight: 400;
 }
+
+
+/*Кнопки*/
+
+.button {
+  background-color: var(--basic-pink);
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  border-radius: 3px;
+  text-align: center;
+
+}
+
+
+.button-2 {
+  background-color: var(--basic-green);
+}
+
+.button-3{
+  background-color: var(--basic-yellow);
+}
+
+/*Каталог*/
+
+.page-name {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.price,
+.filter-name,
+.filter-price label {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.filter-grid-item,
+.filter-features-item {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+
+}
+.sort-type h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sort-type-item {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.filter-grid-list,
+.filter-features-list,
+.sort-type-list,
+.sorting-list,
+.pages-list {
+list-style: none;
+}
+
+.sort-type-item-no-selected {
+  opacity: 0.3;
+}
+.sort-type-list a:hover,
+.sort-type-list a:focus {
+text-decoration: underline;
+}
+
+.pic-slider {
+opacity: 0.12;
+}
+
+/*Изменение состояния*/
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+color: var(--basic-pink);
+}
+.site-navigation a:active,
+.user-navigation a:active {
+color: var(--basic-black);
+opacity: 0.3;
+}
+/*Задать вопрос - как нарисовать линию, когда находимся на тек странице*/
+
+.button:hover,
+.button:focus {
+background: #E74246;
+}
+.button:active{ /*задать вопрос - как сделать меньше прозрачность текста на кнопке при нажатии*/
+background-color: #D7373B;
+color: var(--basic-white);
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-2:hover,
+.button-2:focus {
+background: #00BC6C;
+}
+.button-2:active {
+background: #00AA62;
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.button-3:hover,
+.button-3:focus {
+background: #EAB534;
+}
+.button-3:active {
+background: #E5A722;
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.partners-item img:hover,
+.partners-item img:focus{
+opacity: 1;
+}
+
+.partners-item img:active {
+opacity: 0.1;
+}
+
+.pic-slider:hover,
+.pic-slider:focus {
+opacity: 1;
+}
+
+.button-products-order:hover,
+.button-products-order:focus {
+background: #E74246;
+}
+
+.button-products-order:active {
+background: #D7373B;
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+/*Задать вопросы:
+- как изменить стиль чекбоксов
+- как нарисовать круг вокруг иконок соц.сетей
+- как нарисовать квадрат под страницей
+*/
