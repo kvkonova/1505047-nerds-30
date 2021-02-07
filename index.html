@@ -14,33 +14,38 @@
   <body class="page-body">
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo">
-            <img src="img\nerds-logo.png" width="159.87" height="65.02" alt="Логотип студии Нёрдс">
-          </a>
-          <ul class="site-navigation">
-            <li><a href="">Студия</a></li>
-            <li><a href="">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <li>
-              <a href="">Корзина</a>
-            </li>
-          </ul>
+          <div class="main-navigation-wrapper">
+            <a class="main-header-logo">
+              <img src="img\nerds-logo.png" width="159.87" height="65.02" alt="Логотип студии Нёрдс">
+            </a>
+            <ul class="site-navigation">
+              <li><a href="">Студия</a></li>
+              <li><a href="">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+              <li>
+                <a href="">Корзина</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
     <main class="container">
       <h1 class="visually-hidden">Студия "Нёрдс"</h1>
       <section class="features">
-        <img src="img\nerds-index-slide1 1.png" width="760" height="431" alt="Картинка слогана">
-        <h2 class="visually-hidden">Слоган</h2>
-        <h3 class="features-subtitle">Долго, дорого, скурпулезно.</h3>
-        <p>Математически вывверенный дизайн <br>
-        для вашего сайта или мобильного приложения
-        </p>
-        <a class="button button-more" href="">Узнать больше</a>
-
+        <div>
+          <h2 class="visually-hidden">Слоган</h2>
+          <h3 class="features-subtitle">Долго, дорого, скурпулезно.</h3>
+          <p>Математически вывверенный дизайн <br>
+          для вашего сайта или мобильного приложения
+          </p>
+          <a class="button button-more" href="">Узнать больше</a>
+        </div>
+        <div>
+          <img src="img\nerds-index-slide1 1.png" width="760" height="431" alt="Картинка слогана">
+        </div>
       </section>
       <section class="benefits">
         <h2 class="visually-hidden">Список услуг</h2>
@@ -68,8 +73,10 @@
       <section class="about">
         <div class="about-features">
         <h2 class="visually-hidden">О нас</h2>
-        <h3 class="about-slogan">Мы - маленькая, но гордая дизайн-студия из Краснодара</h3>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h3 class="about-slogan">Мы - маленькая, но гордая <br>
+        дизайн-студия из Краснодара.</h3>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+        превыше креатива. Работаем не покладая рук, как роботы.</p>
         <p class="about-work">Выполняем заказы на разработку:</p>
         <ul class="features-list">
           <li class="features-item">Веб-сайтов любой сложности</li>
@@ -132,30 +139,31 @@
       тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
       <a class="button button-contacts" href="">Напишите нам</a>
       </div>
-      <div class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a href="#">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
+      <div class="footer-grid">
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
             </li>
-          <li class="footer-social-item">
-            <a href="#">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-friends">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+            <li class="footer-social-item">
+              <a href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-friends">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
-
   </body>
 </html>
