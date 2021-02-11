@@ -1,156 +1,169 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css\style.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img\favicon2.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img\favicon.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-    <body>
+  <body class="page-body">
       <header class="main-header">
-        <nav>
-          <a>
-            <img src="img\nerds-logo.png" width="159.87" height="65.02" alt="Логотип студии Нёрдс">
-          </a>
-          <ul>
-            <li><a href="">Студия</a></li>
-            <li><a href="">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-              <div><img src="img\cart-icon.svg" width="15" height="15" alt="Корзина">
-            <a href="">Корзина</a>
-              </div>
-          </nav>
+        <nav class="main-navigation">
+          <div class="main-navigation-wrapper">
+            <a class="main-header-logo">
+              <img src="img\nerds-logo.png" width="159.87" height="65.02" alt="Логотип студии Нёрдс">
+            </a>
+            <ul class="site-navigation">
+              <li><a href="">Студия</a></li>
+              <li><a href="">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+              <li>
+                <a href="">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
-    <main>
-      <h1>Студия "Нёрдс"</h1>
-      <section>
-        <img src="img\nerds-index-slide1 1.png" width="760" height="431" alt="Картинка слогана">
-        <h2>Слоган</h2>
-        <h3>Долго, дорого, скурпулезно.</h3>
-        <p>Математически вывверенный дизайн <br>
-        для вашего сайта или мобильного приложения
-        </p>
-        <a href="">Узнать больше</a>
-
+    <main class="container">
+      <h1 class="visually-hidden">Студия "Нёрдс"</h1>
+      <section class="features">
+        <div>
+          <h2 class="visually-hidden">Слоган</h2>
+          <h3 class="features-subtitle">Долго, дорого, скурпулезно.</h3>
+          <p>Математически вывверенный дизайн <br>
+          для вашего сайта или мобильного приложения
+          </p>
+          <a class="button button-more" href="">Узнать больше</a>
+        </div>
+        <div>
+          <img src="img\nerds-index-slide1 1.png" width="760" height="431" alt="Картинка слогана">
+        </div>
       </section>
-      <section>
-        <h2>Список услуг</h2>
-        <ul>
-          <li>
+      <section class="benefits">
+        <h2 class="visually-hidden">Список услуг</h2>
+        <ul class="benefits-list">
+          <li class="benefits-item">
             <img src="img\illustration-1 1.png" width="300" height="146" alt="Картинка Веб-сайты">
-            <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="">Заказать</a>
+            <h3 class="benefits-subtitle">Веб-сайты</h3>
+            <p class="benefits-desc">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button button-order button-1" href="">Заказать</a>
           </li>
-          <li>
+          <li class="benefits-item">
             <img src="img\illustration-2 1.png" width="300" height="146" alt="Картинка Приложения">
-            <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в App-store и Google Play</p>
-            <a href="">Заказать</a>
+            <h3 class="benefits-subtitle">Приложения</h3>
+            <p class="benefits-desc">Покорите топ-10 приложений в App-store и Google Play</p>
+            <a class="button button-order button-2" href="">Заказать</a>
           </li>
-          <li>
+          <li class="benefits-item">
             <img src="img\illustration-3 1.png" width="300" height="146" alt="Картинка Презентации">
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="">Заказать</a>
+            <h3 class="benefits-subtitle">Презентации</h3>
+            <p class="benefits-desc">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button button-order button-3" href="">Заказать</a>
           </li>
         </ul>
       </section>
-      <section>
-        <div> 
+      <section class="about">
+        <div class="about-features">
         <h2 class="visually-hidden">О нас</h2>
-        <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара</h3>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <h3 class="about-slogan">Мы - маленькая, но гордая <br>
+        дизайн-студия из Краснодара.</h3>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+        превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="about-work">Выполняем заказы на разработку:</p>
+        <ul class="features-list">
+          <li class="features-item">Веб-сайтов любой сложности</li>
+          <li class="features-item">Мобильных приложений для iOS и Android</li>
+          <li class="features-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-      <div>      
-        <img src="img\nerds-illustration 1.png" width="360" height="208"  alt="Логотип студии Нёрдс">
-        <table>
-        <caption>С 2004 года любим точность во всем:</caption>
-        <tr>
-          <td>146%</td>
-          <td>100%</td>
-          <td>50%</td>
-        </tr>
-        <tr>
-          <th>Уровень самоотдачи</th>
-          <th>Соблюдение сроков</th>
-          <th>Минимальная предоплата</th>
-        </tr>
+      <div class="table-benefits">
+        <img src="img\nerds-illustration 1.png" width="360" height="208" alt="Логотип студии Нёрдс" class="logo-image">
+        <table class="box">
+          <caption class="table-title">С 2004 года любим точность во всем:</caption>
+            <tr class="first-row">
+              <td class="first-row-item">146%</td>
+              <td class="first-row-item">100%</td>
+              <td class="first-row-item">50%</td>
+            </tr>
+            <tr class="second-row">
+              <th class="second-row-item">Уровень самоотдачи</th>
+              <th class="second-row-item">Соблюдение сроков</th>
+              <th class="second-row-item">Минимальная предоплата</th>
+            </tr>
         </table>
       </div>
       </section>
-      <section>
-        <h2>Список Партнеров</h2>
-        <ul>
-          <li>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <section class="partners">
+        <h2 class="visually-hidden">Список Партнеров</h2>
+        <ul class="partners-list">
+          <li class="partners-item">
+            <a href="https://htmlacademy.ru/intensive/htmlcss"> Html academy
               <img src="img\hlml academy-logo.png" width="199" height="67.82" alt="html academy">
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="partners-item">
+            <a href="#"> Barbershop Borodinski
               <img src="img\borodinsky-logo.png" width="209" height="90" alt="barbershop Borodinski">
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="partners-item">
+            <a href="#"> Pink
               <img src="img\pink-logo.png" width="185" height="52" alt="Pink">
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="partners-item">
+            <a href="#"> Mishka
              <img src="img\mishka-logo.png" width="173" height="84" alt="Mishka">
             </a>
           </li>
         </ul>
       </section>
-  
+
     </main>
     <footer class="main-footer">
-      <div>
+      <div class="contacts">
       <!-- Здесь будет карта -->
-      <img src="img\map 1.png" width="1440" height="416" alt="Карта">
-      <img src="img\map-marker 1.png" width="231" height="190" alt="Отметка на карте">
-      <p>NЁRDS DESIGN STUDIO</p>
-      <p>191186, Санкт-Петербург, <br>
+      <img src="img\map 1.png" width="1440" height="416" alt="Карта" class="footer-map">
+      <img src="img\map-marker 1.png" width="231" height="190" alt="Отметка на карте" class="footer-map-marker">
+      <p class="studio-name">Nёrds design studio</p>
+      <p class="address">191186, Санкт-Петербург, <br>
       ул. Б. Конюшенная, д.19/8 <br>
-      тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-      <a href="">Напишите нам</a>
+      тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+      <a class="button button-contacts" href="">Напишите нам</a>
       </div>
-      <div>
-        <ul>
-          <li>
-            <a href="#">
-              <img src="img\vk-icon.png" width="26.01" height="15" alt="Вконтакте"> 
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img\fb-icon.png" width="12" height="22" alt="Фейсбук">
-            </a>
+      <div class="footer-grid">
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
             </li>
-          <li>
-            <a href="#">
-              <img src="img\insta-icon.png" width="21" height="21" alt="Инстаграм">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+            <li class="footer-social-item">
+              <a href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-friends">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
-    
   </body>
 </html>
