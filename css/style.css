@@ -19,7 +19,7 @@
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-black);
-  background-color: var(--basic-white);
+  /*background-color: var(--basic-white);*/
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -62,8 +62,6 @@ img {
 }
 .site-navigation {
   list-style: none;
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -82,8 +80,6 @@ img {
 }
 
 .user-navigation{
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
   list-style: none;
   text-transform: uppercase;
 }
@@ -107,7 +103,7 @@ site-navigation a:focus {
   background-position: 0 0;
   position: absolute;
   top: 0px;
-  left: -25px;
+  left: -40px;
 }
 
 /*Header*/
@@ -115,13 +111,12 @@ site-navigation a:focus {
   background-position: center, 0 0;
   background-repeat: no-repeat;
   background-color: var(--basic-gray);
+  height: 114px;
 
   }
 
   .main-header-logo {
-    outline: 5px solid rgba(255, 0, 0, 0.3);
-    outline-offset: -5px;
-    margin-top: 75px;
+    margin-top: 49px;
     margin-bottom: 9px;
   }
 
@@ -151,14 +146,70 @@ site-navigation a:focus {
   background-repeat: no-repeat;
   background-color: var(--basic-gray);
   margin-bottom: 80px;
-  height: 430px;
+  height: 431px;
 }
 
-.features-wrapper{
-  display: grid;
+.features-wrapper	 {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+	display: grid;
   grid-template-columns: 1fr 760px;
+  margin-bottom: 80px;
+  height: 430px;
   background-color: var(--basic-gray);
+
 }
+
+
+.slider {
+  position: relative;
+}
+
+input {
+	display: none;
+}
+
+.slide {
+	display: none;
+}
+.togglers {
+display: flex;
+bottom: 104px;
+left: 179px;
+position: absolute;
+margin-left: -40px;
+}
+
+.toggler {
+display: block;
+width: 18px;
+height: 18px;
+font-size: 0;
+background-color: var(--basic-white);
+border-radius: 50%;
+margin-right: 15px;
+
+}
+
+.toggler:last-child {
+	margin-right: 0;
+}
+
+#slide-1:checked ~ .togglers .toggler:nth-child(1),
+#slide-2:checked ~ .togglers .toggler:nth-child(2),
+#slide-3:checked ~ .togglers .toggler:nth-child(3) {
+	background-image: url("../img/toggler.svg");
+  background-color: var(--basic-white);
+}
+
+
+#slide-1:checked ~ .slides .slide:nth-child(1),
+#slide-2:checked ~ .slides .slide:nth-child(2),
+#slide-3:checked ~ .slides .slide:nth-child(3) {
+	display: block;
+}
+
 
 .features-wrapper p{
   margin-bottom: 38px;
@@ -182,13 +233,15 @@ site-navigation a:focus {
   text-transform: uppercase;
 }
 
+
 .partners {
   border-top: 2px solid var(--basic-gray);
   border-bottom:2px solid var(--basic-gray);
-  padding-bottom: 44px;
+  padding-bottom: 37px;
   padding-top: 46px;
   margin-bottom: 80px;
 }
+
 
 .partners-list {
   list-style: none;
@@ -199,39 +252,52 @@ site-navigation a:focus {
 
   }
 
-  .partners-item{
+.partners-item{
   border-right: 2px solid var(--basic-gray);
   padding-left: 45px;
   }
+
+.partners-item:last-child{
+  border-right: 0px;
+}
 .features-subtitle {
   font-size: 55px;
-  line-height: 55px;
-  font-weight: 500
+  line-height: 56px;
+  font-weight: 500;
+  margin-top: 77px;
+  margin-bottom: 25px;
 }
+
 
 .benefits-subtitle{
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 16px;
 }
+
 
 .about {
   display: grid;
   grid-template-columns: 800px 360px;
-  margin-bottom: 73px;
+  margin-bottom: 50px;
 }
 .about-slogan{
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   margin-bottom: 32px;
+  margin-top: 35px;
 }
+
+
 
 .about-work {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 23px;
-  margin-top: 40px;
+  margin-top: 42px;
 }
 .features-list {
   list-style: none;
@@ -245,35 +311,38 @@ site-navigation a:focus {
 }
 
 .table-benefits img {
-  margin-bottom: 37px;
+  margin-bottom: 31px;
 }
 
 .features-item {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 .features-item::before{
   content:  "—";
   position: relative;
   color: var(--basic-pink);
-  width: 25px;
-  height: 2px;
-  margin-right: 7px;
+  width: 35px;
+  height: 4px;
+  margin-right: 23px;
 }
 
 .table-title {
   font-weight: 700;
   text-transform: uppercase;
   text-align:center;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
 }
+.first-row {
+margin-left: 10px;
 
+}
 .first-row-item{
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
   text-align:left;
   margin-bottom: 10px;
- padding-right: 22px;
+ padding-right: 18px;
 }
 
 .first-row-item span{
@@ -281,6 +350,7 @@ site-navigation a:focus {
   line-height: 40px;
   font-weight: 700;
   vertical-align: top;
+
 }
 .second-row-item {
   font-size: 16px;
@@ -295,42 +365,39 @@ site-navigation a:focus {
 
 /*Футер*/
 
-.main-footer{
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-
+.main-footer {
+  margin-bottom: 65px;
 }
 
 .contacts {
   height: 416px;
   position: relative;
-
+  margin-bottom: 55px;
  }
 
 .map {
   height: 416px;
   width: 100%;
-  border: 3px solid skyblue;
   position: absolute;
   background: url("../img/map.jpg") center no-repeat;
 
  }
 
 .wrapper {
-width: 500px;
-margin-left: 140px;
+width: 1200px;
+margin-left: auto;
 margin-right: auto;
-border: 3px solid yellow;
+position: relative;
 }
 
 .description {
-border: 3px solid green;
 width: 319px;
 height: 308px;
 background-color: var(--basic-white);
-margin-top: 54px;
+top: 54px;
 position: absolute;
 text-align: justify;
+margin-left: 21px;
 }
 
 .description p,
@@ -339,7 +406,7 @@ text-align: justify;
 }
 .studio-name {
   text-transform: uppercase;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -350,26 +417,36 @@ text-align: justify;
 .contacts-phone,
 .address p {
 color: #666666;
+font-size: 16px;
+line-height: 18px;
+font-weight: 400;
 }
 
+.contacts-phone {
+ margin-top: 18px;
+}
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
   }
 
 .footer-social-list {
-  list-style: none
+  list-style: none;
+  padding-left: 0;
 }
 
 .footer-friends h2 {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  margin-top: 19px;
+  margin-bottom: 0px;
 }
 .footer-friends p {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  margin-top: 10px;
 }
 
 .social {
@@ -405,12 +482,17 @@ color: #666666;
   background-color: var(--basic-yellow);
 }
 
+.button-order {
+  margin-top: 16px;
+}
+
 .button-contacts{
   margin-top: 21px;
   margin-bottom: 47px;
+  padding: 17px 44px;
 }
 .social-button {
-  display: block;
+  display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -429,14 +511,30 @@ color: #666666;
   width: 260px;
 }
 
+.button-more {
+  width: 160px;
+  margin-top: 3px;
+}
+
+.button-products-order {
+  margin-top: 35px;
+  width: 120px;
+}
 /*Каталог*/
+.catalog-header {
+  height: 134px;
+}
 
 .page-name {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 108px;
+  margin-bottom: 128px;
+  background-color: var(--basic-gray);
+  margin-top: 0;
+  height: 160px;
+  padding-top: 60px;
 }
 .filter-item {
   margin: 0;
@@ -527,7 +625,6 @@ color: #666666;
   font-family: inherit;
   font-size: inherit;
 }
-
 .price,
 .filter-name,
 .filter-price label {
@@ -537,6 +634,10 @@ color: #666666;
   text-transform: uppercase;
 }
 
+.filter-name {
+  margin-top: 70px;
+  margin-bottom: -5px;
+}
 
 .filter-grid-item,
 .filter-features-item {
@@ -545,11 +646,21 @@ color: #666666;
   font-weight: 400;
 
 }
-.sort-type h2 {
+
+.sort {
+  display: flex;
+  margin-top: 57px;
+  margin-bottom: 35px;
+ }
+
+.sort h2 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  margin-right: 50px;
+  margin-top: -5px;
 }
 
 
@@ -559,10 +670,23 @@ color: #666666;
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-left: 216px;
 }
 
-.sort h2{
-  text-transform: uppercase;
+.sort-type-list li:nth-child(4){
+  margin-right: 5px;
+}
+
+.sort-type-list li:nth-child(3){
+margin-right: 49px;
+}
+.sorting-down {
+
+}
+
+.sorting-up{
+  margin-left: 0;
+  transform: rotate(180deg);
 }
 
 .sort-type-list li{
@@ -574,6 +698,8 @@ color: #666666;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-right: 20px;
+  display: block;
 }
 
 .filter fieldset {
@@ -650,8 +776,25 @@ list-style: none;
 .filter-features-list li {
   margin-bottom: 20px;
 }
+
+.filter-grid-list li:nth-child(2),
+.filter-grid-list li:nth-child(3){
+  margin-top: -5px;
+}
+
+.filter-features-list li:nth-child(2),
+.filter-features-list li:nth-child(3),
+.filter-features-list li:nth-child(4){
+  margin-bottom: 15px;
+}
+.filter-grid-list
 .sort-type-item-no-selected {
   opacity: 0.3;
+}
+
+.filter-grid-list {
+margin-bottom: 47px;
+
 }
 .sort-type-list a:hover,
 .sort-type-list a:focus {
@@ -667,8 +810,72 @@ opacity: 0.12;
   flex-wrap: wrap;
 }
 
+.products-description {
+  position: absolute;
+  top: 100%;
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-gray);
+  text-align: center;
+}
+
+.products-description h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  margin-top: 30px;
+}
+
+.products-description p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+ }
+
+.products-item:hover .products-description {
+  bottom: 0;
+  top:auto;
+
+}
+
 .products-item {
   margin-right: 40px;
+  position: relative;
+  overflow: hidden;
+	background-color:#EAEAEA;
+	border-radius: 1.5%;
+  width: 357px;
+  padding-top: 40px;
+  margin-bottom: 35px;
+}
+.products-item:hover,
+.products-item:focus{
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.products-item::before {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 13px;
+	left: 16px;
+	box-shadow: 23px 0 0 0 white, 46px 0 0 0 white;
+}
+.products-item img {
+	display: block;
+
+}
+
+.products-item:hover {
+	background-color:#4D4D4D;
+
 }
 .products-item:nth-child(2n+1) {
   margin-right: 0;
@@ -678,12 +885,12 @@ opacity: 0.12;
   margin-bottom: 0;
 }
 .page-catalog {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
+   margin-top: 180px;
 }
 
 .columns {
   display: flex;
+  margin-top: 45px;
 }
 
 .column-left {
@@ -695,20 +902,11 @@ opacity: 0.12;
   width: 260px;
   margin-right: 140px;
 }
-.sort {
- margin-top: 55px;
 
-}
 .products {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-  margin-bottom: 55px;
+margin-bottom: 25px;
 }
 
-.filter-grid {
-  outline: 5px solid rgba(15, 45, 53, 0.7);
-  outline-offset: -5px;
-}
 
 .pagination-list {
   display: flex;
@@ -731,6 +929,8 @@ opacity: 0.12;
 
 .pagination-item{
   margin-right: 11px;
+  width: 50px;
+  height: 50px;
 }
 
 .pagination-item-next{
@@ -752,18 +952,29 @@ color: var(--basic-pink);
 color: var(--basic-black);
 opacity: 0.3;
 }
-/*Задать вопрос - как нарисовать линию, когда находимся на тек странице*/
 
 .button:hover,
-.button:focus {
+.button:focus,
+.social-button:hover,
+.social-button:focus {
 background: #E74246;
 }
-.button:active{ /*задать вопрос - как сделать меньше прозрачность текста на кнопке при нажатии*/
+.button:active{
 background-color: #D7373B;
 color: var(--basic-white);
 box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.social-button:active {
+  background-color: #D7373B;
+}
+.social-button svg:active{
+  opacity: 0.3;
+}
+
+.button:active span {
+opacity: 0.3;
+}
 .button-2:hover,
 .button-2:focus {
 background: #00BC6C;
@@ -771,6 +982,8 @@ background: #00BC6C;
 .button-2:active {
 background: #00AA62;
 box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+color: var(--basic-white);
+
 }
 .button-3:hover,
 .button-3:focus {
@@ -803,9 +1016,14 @@ background: #E74246;
 .button-products-order:active {
 background: #D7373B;
 box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
 }
-/*Задать вопросы:
-- как изменить стиль чекбоксов
-- как нарисовать круг вокруг иконок соц.сетей
-- как нарисовать квадрат под страницей
-*/
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.7;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
