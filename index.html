@@ -130,19 +130,19 @@
       <section class="partners">
         <h2 class="visually-hidden">Список Партнеров</h2>
         <ul class="partners-list">
-          <li class="partners-item">
+          <li class="partners-item academy">
             <a href="https://htmlacademy.ru/intensive/htmlcss"> <span class="visually-hidden"> Html academy</span>
               <img src="img\hlml academy-logo.png" width="199" height="67.82" alt="html academy">
             </a>
           </li>
-          <li class="partners-item">
+          <li class="partners-item barbershop">
             <a href="#"> <span class="visually-hidden"> Barbershop Borodinski</span>
               <img src="img\borodinsky-logo.png" width="209" height="90" alt="barbershop Borodinski">
             </a>
           </li>
-          <li class="partners-item">
+          <li class="partners-item pink">
             <a href="#"> <span class="visually-hidden">Pink</span>
-              <img src="img\pink-logo.png" width="185" height="52" alt="Pink">
+              <img src="img\pink-logo.png" width="185" height="52" alt="Pink" >
             </a>
           </li>
           <li class="partners-item">
@@ -206,5 +206,24 @@
         </div>
       </section>
     </footer>
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <form class="send-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="" for="user">Ваше имя:</label><br>
+          <input class="user-name" id="user" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="" for="user-email"><span>Ваш email:</span></label><br>
+          <input class="user-id" id="user-email" type="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="" for="user-comment">Текст письма:</label>
+          <input class="comment" id="user-comment" type="text" placeholder="В свободной форме">
+        </p>
+        <button class="button button-send" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>
