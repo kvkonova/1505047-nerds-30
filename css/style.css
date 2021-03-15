@@ -31,7 +31,7 @@ a {
   }
 
 img {
-  max-width: 100%;
+
   height: auto;
 }
 
@@ -186,10 +186,14 @@ site-navigation a:focus {
 .slide {
 	display: none;
 }
+
+.slide-wrapper {
+  display: flex;
+}
 .togglers {
 display: flex;
-bottom: 104px;
-left: 179px;
+bottom: 94px;
+left: 579px;
 position: absolute;
 margin-left: -40px;
 }
@@ -283,8 +287,12 @@ margin-right: 15px;
   font-weight: 500;
   margin-top: 77px;
   margin-bottom: 25px;
+  width: 540px;
 }
 
+.slogan p{
+  width: 420px;
+}
 
 .benefits-subtitle{
   font-size: 24px;
@@ -308,7 +316,9 @@ margin-right: 15px;
   margin-top: 35px;
 }
 
-
+.slogan {
+  width: 397px;
+}
 
 .about-work {
   font-weight: 700;
@@ -600,12 +610,18 @@ font-weight: 400;
 
 .user-name,
 .user-id {
-width: 357px;
+width: 341px;
 height: 46px;
 margin-top: 5px;
 padding:0px;
 border: 2px solid #D7DCDE;
 border-radius: 3px;
+padding-left: 16px;
+font-size: 16px;
+line-height: 18px;
+font-weight: 400;
+color: #444444;
+opacity: 0.5;
 }
 
 .user-id {
@@ -622,6 +638,12 @@ margin-top: 5px;
 padding:0px;
 border: 2px solid #D7DCDE;
 border-radius: 3px;
+font-size: 16px;
+line-height: 18px;
+font-weight: 400;
+color: #444444;
+opacity: 0.5;
+
 }
 
 
