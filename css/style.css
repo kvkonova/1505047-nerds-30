@@ -631,22 +631,27 @@ opacity: 0.5;
 .modal span {
   margin-left: 37px;
 }
+
 .comment {
-width: 758px;
-height: 114px;
+width: 742px;
+height: 98px;
 margin-top: 5px;
 padding:0px;
 border: 2px solid #D7DCDE;
 border-radius: 3px;
-font-size: 16px;
-line-height: 18px;
-font-weight: 400;
-color: #444444;
 opacity: 0.5;
-
 }
 
-
+#user-comment {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.5;
+  padding-top: 16px;
+  padding-left: 16px;
+}
 /*Кнопки*/
 
 .button {
@@ -715,9 +720,10 @@ opacity: 0.5;
 .button-send {
   width: 259px;
   height: 50px;
-  margin-top: 30px;
+  margin-top: 25px;
   border: none;
 }
+
 /*Каталог*/
 .catalog-header {
   height: 134px;
@@ -1034,6 +1040,7 @@ opacity: 0.12;
   flex-wrap: wrap;
 }
 
+
 .products-description {
   position: absolute;
   top: 100%;
@@ -1050,6 +1057,7 @@ opacity: 0.12;
   text-transform: uppercase;
   margin-bottom: 12px;
   margin-top: 30px;
+  color: var(--basic-black);
 }
 
 .products-description p {
