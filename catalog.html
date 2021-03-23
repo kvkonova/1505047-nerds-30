@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" type="text/css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon2.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon.png">
@@ -216,8 +216,10 @@
     </main>
     <footer class="main-footer">
       <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+
         <div class="map">
-         <!-- <img src="img\map 1.png" width="1440" height="416" alt="Карта" class="footer-map">-->
+         <!-- <img src="img/map 1.png" width="1440" height="416" alt="Карта" class="footer-map">-->
         </div>
         <div class="wrapper">
           <div class="description">
@@ -264,5 +266,27 @@
         </div>
       </section>
     </footer>
+
+    <section class="modal  visually-hidden">
+      <h2>Напишите нам</h2>
+      <form class="send-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="" for="user">Ваше имя:</label>
+          <input class="user-name" id="user" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="" for="user-email"><span>Ваш email:</span></label>
+          <input class="user-id" id="user-email" type="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="" for="user-comment">Текст письма:</label>
+          <textarea class="comment" id="user-comment" rows="8">В свободной форме</textarea>
+        </p>
+        <button class="button button-send" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
