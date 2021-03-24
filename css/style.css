@@ -592,6 +592,12 @@ margin-left: 10px;
   background-color: var(--basic-white);
   background-position: 0 0;
   box-shadow: 0 30px 50px var(--rgba-black);
+  transform: translateY(-1000px);
+  transition: all ease-in-out .3s;
+}
+
+.modal.shown {
+  transform: translateY(0px);
 }
 
 .modal-close {
@@ -1053,7 +1059,7 @@ margin-left: 10px;
   left: -31.5px;
   width: 9px;
   height: 9px;
-  background-color: var(var(--basic-black));
+  background-color: var(--basic-black);
   border-radius: 50%;
   opacity: 0.4;
 }
@@ -1453,12 +1459,12 @@ margin-left: 10px;
 
 .sort-type-item-no-selected a:focus,
 .sort-type-item-no-selected a:hover {
-  color: var (var(--basic-black));
+  color: var(--basic-black);
   opacity: 0.6;
 }
 
 .sort-type-item-no-selected a:active {
-  color: var (var(--basic-black));
+  color: var(--basic-black);
   opacity: 1;
 }
 

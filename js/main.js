@@ -67,3 +67,12 @@ if (sliderElement) {
   });
 }
 
+modalCloseElement.addEventListener('click', function(event) {
+  event.preventDefault();
+  modalElement.classList.remove('shown');
+});
+
+buttonContactsElement.addEventListener('click', function(event) {
+  event.preventDefault();
+  modalElement.classList.add('shown');
+});
